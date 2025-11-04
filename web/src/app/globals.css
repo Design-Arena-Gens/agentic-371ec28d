@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-base text-text font-sans antialiased;
+  background-image: radial-gradient(circle at 0% 0%, rgba(255, 107, 53, 0.12), transparent 55%), radial-gradient(circle at 100% 0%, rgba(255, 107, 53, 0.07), transparent 45%);
+  background-attachment: fixed;
+}
+
+* {
+  scrollbar-color: rgba(255, 107, 53, 0.6) transparent;
+  scrollbar-width: thin;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
